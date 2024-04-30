@@ -1,0 +1,46 @@
+.cube{
+   
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    
+    animation-name: redcube;
+    animation-timing-function:ease ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+.container{
+    display: flex;
+   width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+   }
+@keyframes redcube{
+    0%{
+        
+    background-color: red;
+    transform: translateX(-200px) ;
+   
+    
+ }
+    25%{
+    transform: translateX(200px);
+        background-color: blue;
+    }
+    50%{
+      background-color: green;
+      transform:translate(200px, 200px) ;
+    }
+    75%{
+       background-color: yellow; 
+       transform: translate(-200px, 200px);
+    }
+    100%{
+       background-color: red;
+       transform: translateX(-200px);
+    }
+
+}
